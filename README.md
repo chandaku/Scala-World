@@ -1,6 +1,8 @@
 # Scala-World
 Scala:
 
+https://www.youtube.com/watch?v=-8V6bMjThNo
+
 Everything is a value
 We write code block that generally return a value
 
@@ -79,6 +81,38 @@ Object Orientation
 		override def eat(animal:Animal): Unit = println(“Elating with animal”)
 
 		}
+		
+		
+
+
+		val dinousour = new Carnivore {
+			override eat(animal:Animal):Unit = println(“I am dinosaur so I can eat almost anything”)
+		}
+
+		object MySinglton {
+ 			 val mySpecialVariable = 12345
+  			def mySpecialMethod():Int = 1234
+  			def apply(x:Int):Int = x+1
+		}
+		
+		println(MySinglton(65))
+
+		object Animal { // Companions - Companion Object (Singlton)
+  		// Companion can access each other private/protected variables and methods
+  		val canLiveForever = false
+		}
+
+		val canLive = Animal.canLiveForever
+
+		println(canLive)
+		
+		**************************************** Case Class
+
+		case class Person(name: String, age: Int)
+
+		val person = Person(“Harry”, 39)
+
+
 		
 
 	}
