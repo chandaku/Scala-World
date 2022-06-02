@@ -13,7 +13,7 @@ Val aCodeBlock = {
 	y+x
 	}
 
-Def factorial(n : int) : Int {
+def factorial(n : int) : Int {
 if(n<=1) 1
 Else n* factorial(n-1)
 }
