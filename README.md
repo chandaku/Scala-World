@@ -119,11 +119,12 @@ Object Orientation
 	
 **************************** Pattern Matching (Swtich case of Java) ****************
 val anInteger = 55
-
+```
 val result = anInteger match {
 case 1 => "This is one"
 case 2 => "This is two"
 case 3 => "This is 3"
 case _ => "This is $anInteger"
 }
+```
 print(result)
