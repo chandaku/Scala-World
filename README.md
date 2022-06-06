@@ -127,5 +127,21 @@ case 2 => "This is two"
 case 3 => "This is 3"
 case _ => "This is $anInteger"
 }
-```
 print(result)
+```
+
+Deconstruct an Object while pattern match
+
+```
+case class Person(name: String, age: Int) 
+
+val harry = Person("Harry", 43) // Person.apply
+
+val result = harry match {
+	case Person(n, a) => "This is $n having age $a"
+	case _ => "Not sure who this is?"
+}
+
+println(result)
+```
+
