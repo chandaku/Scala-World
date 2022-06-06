@@ -131,6 +131,7 @@ print(result)
 ```
 
 Deconstruct an Object while pattern match
+with case class decomposition
 
 ```
 case class Person(name: String, age: Int) 
@@ -144,4 +145,27 @@ val result = harry match {
 
 println(result)
 ```
+tuples deconstruction
+
+```
+val aTuple = ("Hi", "welcome")
+
+val result = aTuple match {
+case (a, b) => "Tuple Matched"
+case _ => "Default one"
+}
+```
+
+Decompose list for pattern match 
+
+```
+val aList = List(1, 2, 3)
+
+val result = aList match {
+case List(_, 2, _) => "List having 2 object with 2 and second postion"
+case _ => "Default one"
+}
+```
+
+
 
