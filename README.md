@@ -169,5 +169,23 @@ case _ => "Default one"
 //If PM Does not match anything, it will throw error
 // case are executed in order of sequence
 
+**********************************************ADVANCE FEATURES**********************
+```
+object Advanced extends App {
 
+lazy val aLazyValue = 55
+
+	lazy val aLazyWithSideEffects = {
+	print("I am so lazy")
+	44
+	}
+	
+	val eagerResult = aLazyWithSideEffects + 1;
+
+//************************
+// Learn Option, Try, Future, Implicit
+
+
+}
+```
 
