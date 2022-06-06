@@ -166,6 +166,8 @@ case List(_, 2, _) => "List having 2 object with 2 and second postion"
 case _ => "Default one"
 }
 ```
+//If PM Does not match anything, it will throw error
+// case are executed in order of sequence
 
 
 
