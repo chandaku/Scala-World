@@ -189,3 +189,7 @@ lazy val aLazyValue = 55
 }
 ```
 
+Some differentiator concepts for scala 
+Interpolator = s" $a"
+infix = if only argument for a method then a method can be called as object method argument
+FunctionX = Function1, Function2 .... Function22
