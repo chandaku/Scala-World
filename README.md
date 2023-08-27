@@ -197,8 +197,8 @@ someString match {
 val someTry = Try(someMethodThatMayThrowExcpetion())
 
 someTry match {
-Success => "All clear and good to go"
-Failure => "Bummer it had execption"
+Success(validValue) => "All clear and good to go"
+Failure(ex) => "Bummer it had execption"
 }
 
 Start a process on new thread
