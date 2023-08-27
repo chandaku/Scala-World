@@ -183,9 +183,30 @@ lazy val aLazyValue = 55
 	val eagerResult = aLazyWithSideEffects + 1;
 
 //************************
-// Learn Option, Try, Future, Implicit
+// Pseudo-Collections Option, Try, Future, Implicit
 
+def someMethodThatReturnString() : String = {
+//if method returns valid value then fine otherwise it can return null to make it safe we can use Option, that can have at most value as collection
+}
+val someString = Option(someMethodThatReturnString())
+someString match {
+ Some(value) => "String found"
+ None => "Nothing Found"
+}
 
+val someTry = Try(someMethodThatMayThrowExcpetion())
+
+someTry match {
+Success => "All clear and good to go"
+Failure => "Bummer it had execption"
+}
+
+Start a process on new thread
+val aFuture = Future( {
+print("Starting a new thread")
+Thread sleep 1000
+print("Wait is over")
+})
 }
 ```
 
